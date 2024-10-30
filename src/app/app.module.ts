@@ -23,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     ProductComponent,
     OrderbyPipe,
-    SearchPipe
+    SearchPipe,
+
   ],
   imports: [
     BrowserModule,

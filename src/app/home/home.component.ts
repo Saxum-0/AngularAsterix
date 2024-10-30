@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { figurine, FigurineService } from '../figurine.service';
 import { Router } from '@angular/router';
-import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
