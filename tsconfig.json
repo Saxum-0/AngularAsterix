@@ -3,7 +3,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "noUnusedLocals": false,
+    "noUnusedLocals": true,
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,
