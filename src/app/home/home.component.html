@@ -1,0 +1,63 @@
+<main>
+
+    <div class="home">
+
+        <section class="container presentation p-3">
+
+            <p class="d-flex justify-content-center text-center mx-auto p-4 border border-black rounded">L'entreprise Au petit village est spécialisée dans la création de figurine. <br>
+
+                Au petit village, 
+            </p>
+
+        </section>
+
+        <section class="container pt-md-2 produit">
+
+                <h2 class="text-center my-2">Les Figurines</h2>
+
+                <div class="d-flex justify-content-center p-3">
+                    <input type="text" placeholder="La figurine que je veux" name="search" [{ngModel}]="search">
+            
+
+                    <button class="btn" (click)="inverseorderby()">{{getorderby()}}</button>
+
+                    
+
+
+                </div>
+            
+                <div class="container">
+
+                    <div class="col">
+
+                        <div class="row-sm-6 d-flex justify-content-around pb-5">
+
+                            <div *ngFor="let figurine of figurines | search: search | orderby:(ordersort ? 'croissant' : 'decroissant')" class="card">
+
+                                <h3 class="card-title text-center">{{figurine.name}}</h3>
+
+                                <img src="{{figurine.image}}" class="card-img-center align-self-center" alt="">
+
+                                <div class="card-body text-center">
+
+                                  <p class="card-text">{{figurine.description}}</p>
+
+                                  <p class="card-text">Prix : {{figurine.prix }}</p>
+
+                                  <button (click)="apropos(figurine.name)"type="button" class="btn btn-dark">Détails</button>
+
+                                </div>
+
+                              </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </section>
+
+    </div>
+
+  </main>
