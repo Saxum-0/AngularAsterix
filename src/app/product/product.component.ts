@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { figurine, FigurineService } from '../figurine.service';
+import { Component, OnInit, Input } from '@angular/core';
+import { FigurineService } from '../figurine.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -8,19 +8,18 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './product.component.css'
 })
 export class ProductComponent implements OnInit { 
-  figurine?: figurine;
+  figurines: any[] = [];
+  figurine: any;
 
-constructor(
-  private FigurineService: FigurineService,
-  private route: ActivatedRoute
-){}
+  
+constructor(private route: ActivatedRoute, private FigurineService: FigurineService){}
+
+
+
+
 ngOnInit(): void {
-  this.route.paramMap.subscribe((params) => {
-    const figurinename = String(params.get('name'));
-    this.figurine = this.FigurineService.getfigurinename(figurinename)
-  })
-
+  const FigurineName =this.route.snapshot.paramMap.get('name');
+  if (FigurineName) {this.figurine = this.FigurineService.getfigurinename(FigurineName);}
+  else { this.figurines = this.FigurineService.getfigurines();}
 }
-
-
 }

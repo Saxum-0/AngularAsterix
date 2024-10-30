@@ -1,1 +1,25 @@
 
+<div>
+
+    <section class="container  d-flex justify-content-center">
+
+        <div *ngIf="figurine mx-auto">
+
+            <h1>{{figurine.name}}</h1>
+
+                <img [src]="figurine.image" alt="img" 
+class="rounded mx-auto border border-black">
+
+            <div class="text-center text">
+
+                <p>{{figurine.description}}</p>
+                <p>Prix : {{figurine.prix}}</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+

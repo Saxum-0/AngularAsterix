@@ -16,7 +16,8 @@
                 <h2 class="text-center my-2">Les Figurines</h2>
 
                 <div class="d-flex justify-content-center p-3">
-                    <input type="text" placeholder="La figurine que je veux" name="search" [{ngModule}]="search">
+                    <input type="text" placeholder="La figurine que je veux" name="search" [(ngModel)]="search">
+
             
 
                     <button class="btn" (click)="inverseorderby()">{{getorderby()}}</button>
@@ -44,7 +45,7 @@
 
                                   <p class="card-text">Prix : {{figurine.prix }}</p>
 
-                                  <button (click)="apropos(figurine.name)"type="button" class="btn btn-dark">Détails</button>
+                                  <a href="" class="btn" (click)="apropos($event, figurine)"type="button" class="btn btn-dark">Détails</a>
 
                                 </div>
 
