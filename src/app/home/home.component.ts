@@ -1,6 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgModule, OnInit } from '@angular/core';
 import { figurine, FigurineService } from '../figurine.service';
 import { Router } from '@angular/router';
+
+
+
+
+
+
 
 @Component({
   selector: 'app-home',
