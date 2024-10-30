@@ -24,7 +24,7 @@ import { FormsModule } from '@angular/forms';
     ProductComponent,
     OrderbyPipe,
     SearchPipe,
-
+    
   ],
   imports: [
     BrowserModule,
