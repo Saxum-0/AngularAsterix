@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'BubbleBoddyRegular';
-    src: url('/public/bubbleboddyneue-regular-trial.ttf');
+    src: url('/public/fonts/bubbleboddyneue-regular-trial.ttf');
 }
 @font-face {
     font-family: 'Comfortaa' ;
-    src: url('/public/Comfortaa-Regular.ttf');
+    src: url('/public/fonts/Comfortaa-Regular.ttf');
 }
 a, p {
     font-family: 'Comfortaa';
