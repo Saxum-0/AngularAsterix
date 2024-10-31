@@ -1,37 +1,28 @@
 <main>
 
-    <div class="home">
+    <div class="company">
         <h1>Au Petit Village</h1>
-        <section class="container presentation p-3">
+        <section class="apropos p-3">
 
             <p class="d-flex justify-content-center text-center mx-auto p-4 border border-black rounded">L'entreprise Au petit village est spécialisée dans la création de figurine. <br>
 
-                Au petit village, 
+                Au petit village, Fondée par des passionnés de bande dessinée et d’artisanat, l’entreprise au petit village s’est spécialisée dans la création de figurines faites main d’Astérix, Obélix et leurs célèbres amis du village gaulois. Chaque pièce est minutieusement sculptée, peinte et finie à la main par des artisans qualifiés, capturant les détails et l’esprit de ces personnages emblématiques. En s’inspirant de l’univers et de l’humour de René Goscinny et d’Albert Uderzo, Gaulois en Miniature s’adresse aux collectionneurs et aux amateurs d’art qui cherchent à posséder des objets uniques et authentiques. Avec un souci de fidélité aux designs originaux et une fabrication en édition limitée, l’entreprise s’engage à offrir des figurines d’une qualité exceptionnelle, célébrant le patrimoine culturel de la bande dessinée française.
             </p>
 
         </section>
 
-        <section class="container pt-md-2 produit">
+        <section class="container">
+            <div class="barre justify-content-center p-3">
 
-                <h2 class="text-center my-2">Les Figurines</h2>
+                    <h2 class="text-center my-2">Les Figurines</h2>
 
-                <div class="d-flex justify-content-center p-3">
                     <input type="text" placeholder="La figurine que je veux" name="search" [(ngModel)]="search">
 
-            
-
                     <button class="btn" (click)="inverseorderby()">{{getorderby()}}</button>
-
-                    
-
-
-                </div>
-            
-                <div class="container">
-
-                    <div class="col">
-
-                        <div class="row-sm-6 d-flex justify-content-around pb-5">
+            </div>
+            <div id="wrapper">
+                <div>
+                        <div class="produit">
 
                             <div *ngFor="let figurine of figurines | search: search | orderby:(ordersort ? 'croissant' : 'decroissant')" class="card">
 
@@ -39,7 +30,7 @@
 
                                 <img src='{{figurine.image}}' class="card-img-center align-self-center" alt="">
 
-                                <div class="card-body text-center">
+                                <div class="card-el text-center">
 
                                   <p class="card-text">{{figurine.description}}</p>
 
@@ -55,7 +46,7 @@
 
                     </div>
 
-                </div>
+            </div>
 
         </section>
 

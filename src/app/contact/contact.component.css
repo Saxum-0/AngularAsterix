@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'BubbleBoddyRegular';
+    src: url('/public/bubbleboddyneue-regular-trial.ttf');
+}
+@font-face {
+    font-family: 'Comfortaa' ;
+    src: url('/public/Comfortaa-Regular.ttf');
+}
+
+label {
+    font-family: 'Comfortaa';
+}
+.container {
+    background-color: #DA001E;
+}
+.form {
+    margin-top: 0;
+    
+}
+h1 , label, input, textarea {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 0;
+
+    
+}
+input, textarea {
+    background-color: #F9D0A3;
+}
+body {
+    background-color: #DA001E; 
+}
+.button {
+    background-color: white;
+}

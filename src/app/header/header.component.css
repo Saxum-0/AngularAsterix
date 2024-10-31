@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'BubbleBoddyRegular';
+    src: url('/public/bubbleboddyneue-regular-trial.ttf');
+}
+@font-face {
+    font-family: 'Comfortaa' ;
+    src: url('/public/Comfortaa-Regular.ttf');
+}
+
+a {
+    font-family: 'Comfortaa';
+}
 .container {
     background-color: #151217;
     color: antiquewhite;

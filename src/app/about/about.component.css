@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'BubbleBoddyRegular';
+    src: url('/public/bubbleboddyneue-regular-trial.ttf');
+}
+@font-face {
+    font-family: 'Comfortaa' ;
+    src: url('/public/Comfortaa-Regular.ttf');
+}
+
+h1 {
+    font-family: 'BubbleBoddyRegular';
+}
+p {
+    font-family: 'Comfortaa';
+}
+
+.about {
+    background-color: #FDD90B;
+}
+.about p , h2 {
+    margin-left: 20px;
+    margin-top: 0px;
+}
